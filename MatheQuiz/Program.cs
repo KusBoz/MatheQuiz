@@ -28,11 +28,11 @@
         {
             case QuestionType.Subtraction:
                 correctAnswer = num1 - num2;
-                Console.WriteLine($"{num1} - {num2} = ?");
+                Console.WriteLine($"{num1} - {num2} = ?\n");
                 break;
             case QuestionType.Addition:
                 correctAnswer = num1 + num2;
-                Console.WriteLine($"{num1} + {num2} = ?");
+                Console.WriteLine($"{num1} + {num2} = ?\n");
                 break;
             case QuestionType.Multiplication:
                 while (num1 * num2 >= MaxMultiplication)
@@ -41,7 +41,7 @@
                     num2 = roll.Next(MinValue, MaxValue);
                 }
                 correctAnswer = num1 * num2;
-                Console.WriteLine($"{num1} * {num2} = ?");
+                Console.WriteLine($"{num1} * {num2} = ?\n");
                 break;
             case QuestionType.Division:
                 while (num1 % num2 != 0)
@@ -50,10 +50,9 @@
                     num2 = roll.Next(MinValue, MaxValue);
                 }
                 correctAnswer = num1 / num2;
-                Console.WriteLine($"{num1} / {num2} = ?");
+                Console.WriteLine($"{num1} / {num2} = ?\n");
                 break;
         }
-        Console.WriteLine("");
 
         while (life >= 0)
         {

@@ -1,1 +1,1 @@
-MatheQuiz is a simple C# console app for beginner levels
+MatheQuiz is a simple console app for beginner level c# coders.
